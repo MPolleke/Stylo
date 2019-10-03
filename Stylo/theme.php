@@ -225,6 +225,11 @@ function render_article($subject, $article, $info) {
         echo "<li class='comments'><a href='".BASEDIR."articles.php?article_id=".$info['article_id']."#comments'>".$info['article_comments'].($info['article_comments'] == 1 ? $locale['global_073b'] : $locale['global_073'])."</a></li>\n";
     }
     echo "</ul>\n";
+    if ( !isset($_GET['readmore']) ) {
+        echo "<div class='flright'>\n";
+        echo "<a href='".INFUSIONS."articles/articles.php?article_id=".$info['article_id']."' class='button'><span class='rightarrow icon'></span>".$locale['global_072']."</a>\n";
+        echo "</div>\n";
+    }
     echo "</div>\n";
     echo "<div class='main-body floatfix'>".($info['article_breaks'] == "y" ? nl2br($article) : $article)."</div>\n";
     echo "</div>\n";
