@@ -168,15 +168,15 @@ function render_news($subject, $news, $info) {
     echo "<li class='date'>".showdate("%d %b %Y", $info['news_date'])."</li>\n";
     echo "<li class='author'>".profile_link($info['user_id'], $info['user_name'], $info['user_status'])."</li>\n";
     if ($info['cat_id']) {
-        echo "<li class='cat'><a href='".BASEDIR."news_cats.php?cat_id=".$info['cat_id']."'>".$info['cat_name']."</a></li>\n";
+        echo "<li class='cat'><a href='".INFUSIONS."news/news_cats.php?cat_id=".$info['cat_id']."'>".$info['cat_name']."</a></li>\n";
     } else {
-        echo "<li class='cat'><a href='".BASEDIR."news_cats.php?cat_id=0'>".$locale['global_080']."</a></li>\n";
+        echo "<li class='cat'><a href='".INFUSIONS."news/news_cats.php?cat_id=0'>".$locale['global_080']."</a></li>\n";
     }
     if ($info['news_ext'] == "y" || ($info['news_allow_comments'] && $settings['comments_enabled'] == "1")) {
         echo "<li class='reads'>".$info['news_reads'].$locale['global_074']."</li>\n";
     }
     if ($info['news_allow_comments'] && $settings['comments_enabled'] == "1") {
-        echo "<li class='comments'><a href='".BASEDIR."news.php?readmore=".$info['news_id']."#comments'>".$info['news_comments'].($info['news_comments'] == 1 ? $locale['global_073b'] : $locale['global_073'])."</a></li>\n";
+        echo "<li class='comments'><a href='".INFUSIONS."news/news.php?readmore=".$info['news_id']."#comments'>".$info['news_comments'].($info['news_comments'] == 1 ? $locale['global_073b'] : $locale['global_073'])."</a></li>\n";
     }
     echo "</ul>\n";
     echo "</div>\n";
@@ -187,7 +187,7 @@ function render_news($subject, $news, $info) {
     echo $info['cat_image'].$news."<br />\n";
     if (!isset($_GET['readmore']) && $info['news_ext'] == "y") {
         echo "<div class='flright'>\n";
-        echo "<a href='".BASEDIR."news.php?readmore=".$info['news_id']."' class='button'><span class='rightarrow icon'></span>".$locale['global_072']."</a>\n";
+        echo "<a href='".INFUSIONS."news/news.php?readmore=".$info['news_id']."' class='button'><span class='rightarrow icon'></span>".$locale['global_072']."</a>\n";
         echo "</div>\n";
     }
     echo "</div>\n";
