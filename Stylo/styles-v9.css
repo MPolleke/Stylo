@@ -1,0 +1,137 @@
+/*
+ * Adaptations to make Stylo compatible with PHP-Fusion 9.
+ * Copyright 2019 - 2019 Marcel Pol
+ *
+ * Theme was taken from 8.00.21
+ *
+ * Adaptations are:
+ * - Fix links to News and Articles.
+ * - Add theme file styles-v9.css.
+ *
+ */
+
+#side-center {
+    margin-left: 210px;
+    overflow: hidden;
+}
+
+#content {
+    float: right;
+    width: 99%;
+}
+.content .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+body h3 {
+    font-size: 14px;
+}
+
+body blockquote {
+    font-size: 12px;
+    padding: 0;
+}
+
+.forum-header {
+    background-image: none !important;
+}
+.forum-header .banner {
+    height: 70px !important;
+}
+
+/* Reply, New Thread and Quick Reply */
+/* editor preview button */
+#post_message-link.nav > li {
+    display: inline-block;
+}
+.bbcode_input .dropdown {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+/* .button is in the way, overwrite it */
+body form .btn-primary,
+body form .btn-success {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    text-shadow: none;
+    background-image: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#side-center label.control-label {
+    min-width: 300px;
+}
+body html form label.control-label input {
+    margin-right: 5px !important;
+}
+
+
+
+
+/* Panels */
+
+h4.uip_username a {
+    line-height: 32px;
+}
+body #navigation-user ul {
+    margin: 0;
+    padding: 0 0 0 11px;
+}
+
+
+#sbpanel {
+    margin-bottom: 20px;
+}
+.shoutboxwrapper .shoutboxavatar {
+    margin-right: 5px;
+}
+.shoutboxwrapper a.profile-link:after {
+    content: ' ';
+}
+.shoutboxwrapper abbr.atooltip {
+    display: block;
+    margin-bottom: 2px;
+}
+.shoutboxwrapper .shoutbox {
+    padding: 4px 7px;
+}
+
+
+/* Article Form */
+ul#article_article-link,
+ul#article_snippet-link {
+    clear: both;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+ul#article_article-link li,
+ul#article_snippet-link li {
+    display: inline-block;
+}
+
+
+/* News and Weblink Form */
+body div#news_image_align-field div.col-lg-9,
+body div#weblink_language-field div.col-lg-9 {
+    float: none;
+}
+form .btn-group {
+    display: block;
+}
+
+
+/* Download Form */
+#download_description_short-field .bbcode_input {
+    clear: both;
+    padding-top: 10px;
+}
+
+
+
+
+
+

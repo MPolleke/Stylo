@@ -38,6 +38,8 @@ require_once THEME."functions.php";
 require_once THEMES."templates/switcher.php";
 require_once INCLUDES."theme_functions_include.php";
 
+add_to_head("<link rel='stylesheet' href='".THEME."styles-v9.css' type='text/css' />");
+
 $colour_switcher = new Switcher("select", "colour", "png", "blue", "switcherbutton");
 if (!$enable_colour_switcher) {
     $colour_switcher->disable();
