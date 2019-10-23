@@ -39,6 +39,10 @@ body blockquote {
     height: 70px !important;
 }
 
+.overflow-hide {
+    overflow:hidden;
+}
+
 /* Reply, New Thread and Quick Reply */
 /* editor preview button */
 #post_message-link.nav > li {
@@ -63,7 +67,7 @@ body form .btn-success {
 }
 
 #side-center label.control-label {
-    min-width: 300px;
+    min-width: 200px;
 }
 body html form label.control-label input {
     margin-right: 5px !important;
