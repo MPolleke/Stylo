@@ -19,7 +19,8 @@
 if (!defined("IN_FUSION")) {
     die("Access Denied");
 }
-define("THEME_BULLET", "<img src='".THEME."images/bullet.gif' class='bullet' alt='&raquo;' border='0' />");
+define("THEME_BULLET", "&middot");
+define("BOOTSTRAP", FALSE);
 define("THEME_WIDTH", "100%");
 
 // Uncomment to enable/disable styles

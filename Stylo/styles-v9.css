@@ -2,11 +2,13 @@
  * Adaptations to make Stylo compatible with PHP-Fusion 9.
  * Copyright 2019 - 2019 Marcel Pol
  *
- * Theme was taken from 8.00.21
+ * Theme was taken from 8.00.22
  *
  * Adaptations are:
- * - Fix links to News and Articles.
+ * - Fix paths to news links.
+ * - Add link for articles, so single article can be viewed.
  * - Add theme file styles-v9.css.
+ * - Change THEME_BULLET to '&middot;'.
  *
  */
 
