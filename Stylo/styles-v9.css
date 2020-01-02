@@ -42,7 +42,11 @@ body blockquote {
 }
 
 .overflow-hide {
-    overflow:hidden;
+    overflow: hidden;
+}
+
+.display-inline-block {
+    display: inline-block;
 }
 
 /* Reply, New Thread and Quick Reply */
